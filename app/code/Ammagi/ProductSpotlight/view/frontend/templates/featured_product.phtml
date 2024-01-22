@@ -1,0 +1,30 @@
+<div data-bind="scope: 'productSpotlight'">
+    <!-- ko with: $data -->
+    <div class="featured-product d-none" data-bind="visible: productName">
+    <img data-bind="attr: {src: productImageUrl, alt: productName}">
+        <h2 data-bind="text: productName"></h2>
+        <p>Preço: <span data-bind="text: productPrice"></span></p>
+        <p>Em estoque: <span data-bind="text: productStock"></span></p>
+        <a data-bind="attr: {href: productUrl}">
+            <!-- <button class="action more button">Ver Produto</button> -->
+            <button title="Ver produto" class="action tocart primary">
+                <span>Ver Produto</span>
+            </button>
+        </a>
+    </div>
+    <!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "productSpotlight": {
+                    "component": "Ammagi_ProductSpotlight/js/product-spotlight"
+                }
+            }
+        }
+    }
+}
+</script>
