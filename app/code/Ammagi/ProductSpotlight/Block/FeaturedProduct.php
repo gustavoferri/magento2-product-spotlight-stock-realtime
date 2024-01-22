@@ -13,6 +13,14 @@ class FeaturedProduct extends Template
     protected $productCollectionFactory;
     protected $stockRegistry;
 
+    /**
+     * Constructor.
+     *
+     * @param Context $context
+     * @param CollectionFactory $productCollectionFactory
+     * @param StockRegistryInterface $stockRegistry
+     * @param array $data
+     */
     public function __construct(
         Context $context,
         CollectionFactory $productCollectionFactory,
@@ -24,6 +32,11 @@ class FeaturedProduct extends Template
         $this->stockRegistry = $stockRegistry;
     }
 
+    /**
+     * Get the featured product.
+     *
+     * @return \Magento\Catalog\Model\Product
+     */
     public function getFeaturedProduct()
     {
         $collection = $this->productCollectionFactory->create();
@@ -34,6 +47,12 @@ class FeaturedProduct extends Template
         return $collection->getFirstItem();
     }
 
+    /**
+     * Get the stock quantity of a product.
+     *
+     * @param int $productId
+     * @return float|int
+     */
     public function getStockQty($productId)
     {
         $stockItem = $this->stockRegistry->getStockItem($productId);

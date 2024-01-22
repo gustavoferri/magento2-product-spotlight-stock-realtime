@@ -19,6 +19,16 @@ class FeaturedProductAjax extends Action
     protected $imageHelper;
     protected $priceHelper;
 
+    /**
+     * Constructor.
+     *
+     * @param Context $context
+     * @param CollectionFactory $productCollectionFactory
+     * @param JsonFactory $jsonFactory
+     * @param StockRegistryInterface $stockRegistry
+     * @param ImageHelper $imageHelper
+     * @param PriceHelper $priceHelper
+     */
     public function __construct(
         Context $context,
         CollectionFactory $productCollectionFactory,
