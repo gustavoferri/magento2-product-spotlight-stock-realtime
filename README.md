@@ -3,7 +3,9 @@
 # Módulo Ammagi_ProductSpotlight
 O módulo "ProductSpotlight" para Magento 2 é uma solução desenvolvida para destacar produtos específicos em sua loja online, com um foco particular em atualizações em tempo real do estoque.
 
-![image](https://github.com/gustavoferri/magento2-product-spotlight-stock-realtime/assets/24641762/e725a16c-9868-4c01-abb0-cba356f7e193)
+
+https://github.com/gustavoferri/magento2-product-spotlight-stock-realtime/assets/24641762/5ae60948-6d30-4490-ab61-3d6aa986f87b
+
 
 
 
@@ -11,7 +13,7 @@ O módulo "ProductSpotlight" para Magento 2 é uma solução desenvolvida para d
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+Consulte **[Implantação](#implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
