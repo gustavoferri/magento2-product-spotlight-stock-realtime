@@ -15,6 +15,14 @@ class CheckStockUpdate extends Action
     protected $productFactory;
     protected $stockRegistry;
 
+    /**
+     * Constructor.
+     *
+     * @param Context $context
+     * @param JsonFactory $resultJsonFactory
+     * @param ProductFactory $productFactory
+     * @param StockRegistryInterface $stockRegistry
+     */
     public function __construct(
         Context $context,
         JsonFactory $resultJsonFactory,
